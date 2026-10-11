@@ -21,6 +21,17 @@
 [![Powered by Textual](https://img.shields.io/badge/UI-Textual-f472b6?style=for-the-badge)](https://textual.textualize.io/)
 [![Backend](https://img.shields.io/badge/Audio-MPV_IPC-f59e0b?style=for-the-badge&logo=mpv&logoColor=white)](https://mpv.io/)
 
+<br><br>
+
+<p align="center">
+  <img src="assets/main_view.png" alt="LiquidCloud Main Interface" width="100%">
+</p>
+
+<p align="center">
+  <img src="assets/playlists_view.png" alt="SoundCloud Playlists View" width="49%">
+  <img src="assets/auth_modal.png" alt="SoundCloud Authentication Dialog" width="49%">
+</p>
+
 </div>
 
 ---
