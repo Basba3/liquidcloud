@@ -1,0 +1,319 @@
+/* Liquid Glass Theme for SoundCloud TUI */
+
+Screen {
+    background: #060913;
+    color: #e2e8f0;
+}
+
+#app-container {
+    width: 100%;
+    height: 100%;
+}
+
+#main-layout {
+    width: 100%;
+    height: 1fr;
+}
+
+Sidebar, #sidebar {
+    width: 26;
+    height: 100%;
+}
+
+#content-container {
+    width: 1fr;
+    height: 100%;
+    padding: 0 1;
+}
+
+PlayerBar, #player-bar {
+    height: 6;
+    width: 100%;
+    dock: bottom;
+}
+
+/* Sidebar */
+#sidebar-container {
+    width: 100%;
+    height: 100%;
+    background: #090f1d;
+    border-right: solid #1e293b;
+    padding: 1 1;
+}
+
+#sidebar-logo {
+    text-align: center;
+    margin-bottom: 1;
+    padding: 0 0 1 0;
+    border-bottom: solid #00f5d4;
+}
+
+.sidebar-btn {
+    width: 100%;
+    margin-bottom: 1;
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    text-align: left;
+    content-align: left middle;
+}
+
+.sidebar-btn:hover {
+    background: #1e293b;
+    color: #38bdf8;
+}
+
+.sidebar-btn.active {
+    background: #00f5d4 20%;
+    color: #00f5d4;
+    border-left: thick #00f5d4;
+    text-style: bold;
+}
+
+#sidebar-spacer {
+    height: 1fr;
+}
+
+/* Content Area */
+#search-bar-row {
+    height: 3;
+    margin-top: 1;
+    margin-bottom: 1;
+}
+
+#search-input {
+    width: 1fr;
+    background: #0a1122;
+    border: round #1e293b;
+    color: #f8fafc;
+}
+
+#search-input:focus {
+    border: round #00f5d4;
+}
+
+#search-btn {
+    width: 12;
+    margin-left: 1;
+    background: #00f5d4;
+    color: #060913;
+    border: none;
+    text-style: bold;
+}
+
+#search-btn:hover {
+    background: #38bdf8;
+    color: #060913;
+}
+
+/* Genres Bar in Explore */
+#explore-genres-row {
+    height: auto;
+    margin-bottom: 1;
+    padding: 0 0;
+}
+
+#sc-playlists-bar-row {
+    height: 3;
+    margin-bottom: 1;
+    padding: 0 0;
+    align-vertical: middle;
+}
+
+#sc-playlists-bar-row.hidden {
+    display: none;
+}
+
+.genre-tag-btn {
+    margin-right: 1;
+    margin-bottom: 1;
+    background: #0f172a;
+    color: #94a3b8;
+    border: round #1e293b;
+    min-width: 10;
+}
+
+.genre-tag-btn:hover {
+    background: #1e293b;
+    color: #38bdf8;
+    border: round #38bdf8;
+}
+
+.genre-tag-btn.active {
+    background: #00f5d4 22%;
+    color: #00f5d4;
+    border: round #00f5d4;
+    text-style: bold;
+}
+
+/* Track Table */
+TrackTable {
+    width: 100%;
+    height: 1fr;
+    background: #080d19;
+    border: round #1e293b;
+}
+
+TrackTable > .datatable--header {
+    background: #0d1527;
+    color: #00f5d4;
+    text-style: bold;
+}
+
+TrackTable > .datatable--cursor {
+    background: #0e7490;
+    color: #ffffff;
+    text-style: bold;
+}
+
+TrackTable > .datatable--hover {
+    background: #1e293b 50%;
+}
+
+/* Bottom Player Bar */
+#player-container {
+    height: 6;
+    background: #060b16;
+    border-top: solid #00f5d4;
+    padding: 0 2;
+}
+
+#player-info-row {
+    height: 1;
+    margin-top: 1;
+    align: left middle;
+}
+
+#player-equalizer {
+    width: 8;
+}
+
+#player-track-info {
+    width: auto;
+    margin-left: 1;
+}
+
+#player-spacer {
+    width: 1fr;
+}
+
+#player-badges {
+    width: auto;
+    text-align: right;
+}
+
+#player-progress-row {
+    height: 1;
+    align: center middle;
+    margin-top: 1;
+}
+
+#player-time-curr, #player-time-total {
+    width: 8;
+    color: #64748b;
+}
+
+#player-progress-bar {
+    width: 1fr;
+    content-align: center middle;
+}
+
+#player-hints-row {
+    height: 1;
+    align: center middle;
+}
+
+#player-hints {
+    text-align: center;
+}
+
+/* Modals */
+#url-modal-dialog, #playlist-picker-dialog, #new-playlist-dialog {
+    width: 60;
+    height: auto;
+    background: #090f1d;
+    border: thick #00f5d4;
+    padding: 1 2;
+    align: center middle;
+}
+
+#login-modal-dialog {
+    width: 74;
+    height: auto;
+    background: #090f1d;
+    border: thick #00f5d4;
+    padding: 1 2;
+    align: center middle;
+}
+
+.modal-user-card {
+    background: #101c33;
+    border: round #38bdf8;
+    padding: 0 1;
+    margin-bottom: 1;
+    width: 100%;
+}
+
+.modal-help-box {
+    background: #0c1424;
+    border: round #334155;
+    padding: 0 1;
+    margin-bottom: 1;
+    width: 100%;
+}
+
+.modal-status {
+    height: 1;
+    margin-top: 1;
+    text-align: center;
+    width: 100%;
+}
+
+#help-modal-dialog {
+    width: 70;
+    height: 80%;
+    background: #090f1d;
+    border: thick #00f5d4;
+    padding: 1 2;
+    align: center middle;
+}
+
+#modal-title {
+    margin-bottom: 1;
+    text-align: center;
+}
+
+.modal-subtitle {
+    margin-bottom: 1;
+}
+
+.modal-buttons {
+    margin-top: 1;
+    align: right middle;
+    height: 3;
+}
+
+.modal-buttons Button {
+    margin-left: 1;
+}
+
+#help-text {
+    width: 100%;
+    height: 1fr;
+}
+
+.player-ctrl-btn {
+    height: 1;
+    min-width: 8;
+    margin-right: 1;
+    background: #0f172a;
+    color: #00f5d4;
+    border: round #1e293b;
+    padding: 0 1;
+}
+
+.player-ctrl-btn:hover {
+    background: #00f5d4 25%;
+    color: #ffffff;
+    border: round #00f5d4;
+}

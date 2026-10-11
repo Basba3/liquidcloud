@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs & Sockets
+*.log
+*.sock
+*.tmp
+
+# Sensitive user configs & tokens
+auth.json
+client_id.json
+favorites.json
+history.json
+playlists.json
+settings.json
+.config/
+.cache/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
