@@ -5,7 +5,21 @@
 # ==============================================================================
 set -e
 
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+# Resolve symlinks to find the actual project directory
+if command -v realpath &>/dev/null; then
+    SCRIPT_PATH="$(realpath "${BASH_SOURCE[0]}")"
+else
+    SCRIPT_PATH="${BASH_SOURCE[0]}"
+    while [ -h "$SCRIPT_PATH" ]; do
+        TARGET="$(readlink "$SCRIPT_PATH")"
+        if [[ $TARGET == /* ]]; then
+            SCRIPT_PATH="$TARGET"
+        else
+            SCRIPT_PATH="$(dirname "$SCRIPT_PATH")/$TARGET"
+        fi
+    done
+fi
+DIR="$(cd "$(dirname "$SCRIPT_PATH")" >/dev/null 2>&1 && pwd)"
 
 # Check if mpv is installed
 if ! command -v mpv &> /dev/null; then
