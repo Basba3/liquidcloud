@@ -233,6 +233,15 @@ LiquidCloud
 
 ---
 
+## 💬 Contact & Support
+
+Have questions, suggestions, or want to connect?
+
+[![Telegram](https://img.shields.io/badge/Telegram-@KROV1337-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/KROV1337)
+[![Discord](https://img.shields.io/badge/Discord-@lewopa-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com)
+
+---
+
 ## 📜 License
 
 Distributed under the **MIT License**. See `LICENSE` for more information.
@@ -240,5 +249,5 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 <div align="center">
-Made with 💧 by <a href="https://github.com/Basba3">Basba3</a>
+Made with 💧 by <a href="https://github.com/Basba3">Basba3</a> • Telegram: <a href="https://t.me/KROV1337">@KROV1337</a> • Discord: <code>@lewopa</code>
 </div>

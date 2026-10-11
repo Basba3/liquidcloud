@@ -84,6 +84,10 @@ class HelpModal(ModalScreen[None]):
   [bold white]c[/]          Clear queue (in Queue tab)
   [bold white]d / Del[/]    Remove track from queue or playlist
   [bold white]P (Shift+p)[/] Add selected track to a Local Playlist
+
+[bold yellow]Contacts & Support[/]
+  [bold #38bdf8]Telegram:[/] @KROV1337
+  [bold #a78bfa]Discord:[/]  @lewopa
 """
 
     def compose(self) -> ComposeResult:
