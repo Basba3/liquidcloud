@@ -65,6 +65,7 @@ class MpvPlayer:
             "--demuxer-max-bytes=8M",
             "--demuxer-readahead-secs=15",
             "--gapless-audio=yes",
+            "--ao=pipewire,pulse,alsa,jack",
             f"--volume={self.volume}",
         ]
 
